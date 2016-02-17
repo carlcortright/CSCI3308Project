@@ -16,3 +16,24 @@ luke.meszar@colorado.edu
 Chris Rhoda
 christopher.rhoda@colorado.edu
 chrisRhoda
+
+Vision statement: - John
+
+Motidvation: - Calvin
+
+Risks: - Luke
+
+Mitigation Strategy: - Chris
+
+List of Requirements: - Chris & Carl
+
+Methodology: - Carl 
+
+Project Tracking Software: - Luke (trello, slack)
+
+Project Plan: - Calvin
+
+
+
+
+
