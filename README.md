@@ -6,3 +6,12 @@ calvin.ly@colorado.edu
 
 John Zavidniak
 john.zavidniak@colorado.edu
+
+Carl Cortright
+ckcortright@gmail.com
+
+Luke Meszar
+luke.meszar@colorado.edu
+
+Chris Rhoda
+christopher.rhoda@colorado.edu
