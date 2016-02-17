@@ -15,3 +15,4 @@ luke.meszar@colorado.edu
 
 Chris Rhoda
 christopher.rhoda@colorado.edu
+chrisRhoda
