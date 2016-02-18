@@ -34,15 +34,26 @@ ID 4 ; Priority: Critical ; Topic Area: Learning development tools ; User type: 
 -As a team member I want to learn how to develop for Android wear so that I can contribute to our team’s project. (This will be an ongoing task throughout the project)
 
 ID: 5 ; Priority: Critical ; Topic Area: App functionality ; User type: Developer ; Sizing: 8
-- As a developer, I want to add basic message functionality, so that messages are correctly displayed to the user.  
-ID: 5.1 ; Priority: Critical ; Topic Area: User interaction ; User type: End user ; Sizing: 2; -As a developer I want to create a database with encouraging phrases so that we can display those phrases on the app. 
-ID: 5.2 ; Priority: Critical ; Topic Area: User interaction ; User type: End user ; Sizing: 1; -As a developer I want to come up with encouraging messages for our users so that users can be encouraged throughout their day. 
-ID: 5.3 ; Priority: Critical ; Topic Area: User interaction ; User type: End user ; Sizing: 2; -As a developer I want to write code to access our database so that our app can function efficiently for users. 
-ID: 5.4 ; Priority: Critical ; Topic Area: User interaction ; User type: End user ; Sizing: 2; -As a developer I want to create an interface to display encouraging messages so that our users can have a beautiful interface to view those messages. 
+- As a developer, I want to add basic message functionality, so that messages are correctly displayed to the user.
+ 
+ID: 5.1 ; Priority: Critical ; Topic Area: User interaction ; User type: End user ; Sizing: 2; 
+-As a developer I want to create a database with encouraging phrases so that we can display those phrases on the app. 
+
+ID: 5.2 ; Priority: Critical ; Topic Area: User interaction ; User type: End user ; Sizing: 1; 
+-As a developer I want to come up with encouraging messages for our users so that users can be encouraged throughout their day.
+
+ID: 5.3 ; Priority: Critical ; Topic Area: User interaction ; User type: End user ; Sizing: 2; 
+-As a developer I want to write code to access our database so that our app can function efficiently for users. 
+
+ID: 5.4 ; Priority: Critical ; Topic Area: User interaction ; User type: End user ; Sizing: 2; 
+-As a developer I want to create an interface to display encouraging messages so that our users can have a beautiful interface to view those messages. 
 
 ID: 6 ; Priority: Medium ; Topic Area: App functionality ; User type: Developer ; Sizing:
 - As a developer, I want to interface the user’s alarm and calendar so that messages are timed with the events in the user’s life.
-ID: 6.1 ; Priority: Medium ; Topic Area: User interaction ; User type: End user ; Sizing: -As a developer, I want to learn how to use APIs for Google Calendar and Alarms so that the app can display messages that are timed with the events in the user’s life.
+
+ID: 6.1 ; Priority: Medium ; Topic Area: User interaction ; User type: End user ; Sizing:
+-As a developer, I want to learn how to use APIs for Google Calendar and Alarms so that the app can display messages that are timed with the events in the user’s life.
+
 ID: 6.2 ; Priority: Medium ; Topic Area: User interaction ; User type: End user ; Sizing: 3 -As a developer, I want to write code to interface with the two APIs listed above so that messages can be displayed to the user at the appropriate times.
 	
 ID: 6.3 ; Priority: Medium ; Topic Area: User interaction ; User type: End user ; Sizing: 5 -As a developer, I want to connect data from Calendar and Alarms with the message database so that messages can be correctly displayed at the appropriate times.
