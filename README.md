@@ -1,13 +1,12 @@
 # CSCI3308Project
 Group repository for our spring of 2016 CSCI3308-Software Development Methods and Tools project. 
 
-(This will be an ongoing task throughout the project)
-
 
 #Project Proposal: Words of Encouragement
 ##Description:
 An Android Wear application that syncs with the user’s Calendar, Alarm, and To Do List to offer words of encouragement throughout the day based on what they have planned.
-##Vision statement: - Every smartwatch user should wake up with the proper words of encouragement to start their day off right. Not only should their day start off right, but continual encouragement throughout the day will lead to increased happiness and productivity. 
+##Vision statement: 
+Every smartwatch user should wake up with the proper words of encouragement to start their day off right. Not only should their day start off right, but continual encouragement throughout the day will lead to increased happiness and productivity. 
 Motivation: Our motivation for this project is to develop an app that will be used everyday. We want our users to look forward to our messages and hopefully it’ll be a bright spot in their day.   
 ##Risks: 
 The main risk that I believe we will face is a lack of knowledge of developing apps for Android wearable devices. We only have one Android watch to test on. If this watch breaks, our team could be a tough spot to finish our project. Our team also has no experience working together. 
