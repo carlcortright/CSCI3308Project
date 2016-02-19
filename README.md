@@ -54,9 +54,11 @@ ID: 6 ; Priority: Medium ; Topic Area: App functionality ; User type: Developer 
 ID: 6.1 ; Priority: Medium ; Topic Area: User interaction ; User type: End user ; Sizing:
 -As a developer, I want to learn how to use APIs for Google Calendar and Alarms so that the app can display messages that are timed with the events in the user’s life.
 
-ID: 6.2 ; Priority: Medium ; Topic Area: User interaction ; User type: End user ; Sizing: 3 -As a developer, I want to write code to interface with the two APIs listed above so that messages can be displayed to the user at the appropriate times.
+ID: 6.2 ; Priority: Medium ; Topic Area: User interaction ; User type: End user ; Sizing: 3 
+-As a developer, I want to write code to interface with the two APIs listed above so that messages can be displayed to the user at the appropriate times.
 	
-ID: 6.3 ; Priority: Medium ; Topic Area: User interaction ; User type: End user ; Sizing: 5 -As a developer, I want to connect data from Calendar and Alarms with the message database so that messages can be correctly displayed at the appropriate times.
+ID: 6.3 ; Priority: Medium ; Topic Area: User interaction ; User type: End user ; Sizing: 5 
+-As a developer, I want to connect data from Calendar and Alarms with the message database so that messages can be correctly displayed at the appropriate times.
 	
 
 ###Non-Functional Requirements
