@@ -107,6 +107,8 @@ Our group plans to follow the agile development methodology. We think that agile
 ##Project Tracking Software:
 - We will be using Trello for our project tracking software. Here is a link to our Trello page: https://trello.com/b/m3tYPAdn/team-to-do 
 
+##Project Plan:
+http://imgur.com/XNUgpXc
  
 
 
