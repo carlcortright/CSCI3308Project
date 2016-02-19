@@ -4,10 +4,10 @@ Group repository for our spring of 2016 CSCI3308-Software Development Methods an
 ## Group Members
 | Name | Email | Github |
 | ---- | ---- | ----|
-|Calvin Ly |calvin.ly@colorado.edu |  |
+|Calvin Ly |calvin.ly@colorado.edu | calvinly1 |
 |John Zavidniak | john.zavidniak@colorado.edu | John459 |
 |Carl Cortright | ckcortright@gmail.com | ckcortright |
-|Luke Meszar | luke.meszar@colorado.edu |   |
+|Luke Meszar | luke.meszar@colorado.edu | LukeMeszar |
 |Chris Rhoda | christopher.rhoda@colorado.edu | chrisRhoda |
 
 #Project Proposal: Words of Encouragement
@@ -38,11 +38,10 @@ As stated above, our main obstacle is the lack of knowledge developing Android w
 | 5 | Critical | Learning Development Tools | Developer | 12 |  As a developer, I want to create a database with encouraging phrases to be displayed on the app. | None |
 | 6 | Critical | Learning Development Tools | Developer | 4 |  As a developer, I want to come up with encouraging messages for our users so that users can be encouraged throughout their day. | None |
 | 7 | Critical | Learning Development Tools | Developer | 8 |  As a developer, I want to write code to access our database so that our app can function efficiently for users. | None |
-| 8 | Low | Learning Graphics Tools | Developer| 10 |  As a developer, I want to create an interface to display encouraging messages so that our users can have a beautiful interface to view those messages.  | None |
-| 9 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
-| 10 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
-| 11 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
-ID 4 ; Priority: Critical ; Topic Area: Learning development tools ; User type: Developer ; Sizing: 8
+| 8 | Critical | Learning Graphics Tools | Developer| 10 |  As a developer, I want to create an interface to display encouraging messages so that our users can have a beautiful interface to view those messages.  | None |
+| 9 | Medium | Learning APIs | Developer | 4 |  As a developer, I want to learn how to use APIs for Google Calendar and Alarms so that the app can display messages that are timed with the events in the user’s life.  | None |
+| 10 | Medium | Learning APIs | Developer | 4 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
+
  
 
 ID: 6 ; Priority: Medium ; Topic Area: App functionality ; User type: Developer ; Sizing:
