@@ -24,49 +24,26 @@ As stated above, our main obstacle is the lack of knowledge developing Android w
 
 ###User Requirements
 
-ID | Priority | Topic Area | User type | Sizing | Description | Notes |
----- | ---- | ---- | ---- | ---- | ---- | ----|
-| 0 | Critical | User Interaction | End User | 3 |  As a user I want to get an inspirational message every day to encourage me to encourage me throughout my life. | None |
-| 1 | Medium | User Interaction | End User | 5 |  As a user, I want to have a beautiful interface so that I can show my friends the app without being embarrassed. | None |
-| 2 | Medium | User Interaction | End User | 5 |  As a user, I want to get messages when I wake up and before I have stressful events listed on my calendar so that I can  be encouraged during stressful parts of my life and wake up on the “right side of the bed.” | None |
-| 3 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities/  | None |
-ID: 1 ; Priority: Medium ; Topic Area: User interaction ; User type: End user ; Sizing: 5
-
--As a user, I want to have a beautiful interface so that I can show my friends the app without being embarrassed 
-
-ID: 2 ; Priority: Medium ; Topic Area: User interaction ; User type: End user ; Sizing: 5
-
--As a user, I want to get messages when I wake up and before I have stressful events listed on my calendar so that I can  be encouraged during stressful parts of my life and wake up on the “right side of the bed”
-
-ID: 3 ; Priority: Low ; Topic Area: User interaction ; User type: End user ; Sizing: 5
-
-- As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities 
+ID | Priority | Topic Area | User type | Sizing (Time Sized) | Description | Notes |
+|---- | ---- | ---- | ---- | ---- | ---- | ----|
+| 0 | Critical | User Interaction | End User | 8 |  As a user I want to get an inspirational message every day to encourage me to encourage me throughout my life. | None |
+| 1 | Medium | User Interaction | End User | 7 |  As a user, I want to have a beautiful interface so that I can show my friends the app without being embarrassed. | None |
+| 2 | Medium | User Interaction | End User | 6 |  As a user, I want to get messages when I wake up and before I have stressful events listed on my calendar so that I can  be encouraged during stressful parts of my life and wake up on the “right side of the bed.” | None |
+| 3 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
 
 ###Functional Requirements
-
+]ID | Priority | Topic Area | User type | Sizing (Time Sized) | Description | Notes |
+|---- | ---- | ---- | ---- | ---- | ---- | ----|
+| 4 | Critical | Learning development tools | Developer | 18 |  As a team member, I want to learn how to develop for Android wear so that I can contribute to our team’s project. (This will be an ongoing task throughout the project) | None |
+| 5 | Medium | User Interaction | End User | 5 |  As a user, I want to have a beautiful interface so that I can show my friends the app without being embarrassed. | None |
+| 6 | Medium | User Interaction | End User | 5 |  As a user, I want to get messages when I wake up and before I have stressful events listed on my calendar so that I can  be encouraged during stressful parts of my life and wake up on the “right side of the bed.” | None |
+| 7 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
+| 8 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
+| 8 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
+| 10 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
+| 11 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
 ID 4 ; Priority: Critical ; Topic Area: Learning development tools ; User type: Developer ; Sizing: 8
-
--As a team member I want to learn how to develop for Android wear so that I can contribute to our team’s project. (This will be an ongoing task throughout the project)
-
-ID: 5 ; Priority: Critical ; Topic Area: App functionality ; User type: Developer ; Sizing: 8
-
-- As a developer, I want to add basic message functionality, so that messages are correctly displayed to the user.
-
-ID: 5.1 ; Priority: Critical ; Topic Area: User interaction ; User type: End user ; Sizing: 2; 
-
--As a developer I want to create a database with encouraging phrases so that we can display those phrases on the app. 
-
-ID: 5.2 ; Priority: Critical ; Topic Area: User interaction ; User type: End user ; Sizing: 1; 
-
--As a developer I want to come up with encouraging messages for our users so that users can be encouraged throughout their day.
-
-ID: 5.3 ; Priority: Critical ; Topic Area: User interaction ; User type: End user ; Sizing: 2; 
-
--As a developer I want to write code to access our database so that our app can function efficiently for users. 
-
-ID: 5.4 ; Priority: Critical ; Topic Area: User interaction ; User type: End user ; Sizing: 2; 
-
--As a developer I want to create an interface to display encouraging messages so that our users can have a beautiful interface to view those messages. 
+ 
 
 ID: 6 ; Priority: Medium ; Topic Area: App functionality ; User type: Developer ; Sizing:
 
