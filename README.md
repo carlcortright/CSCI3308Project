@@ -45,7 +45,7 @@ As stated above, our main obstacle is the lack of knowledge developing Android w
 | ID | Priority | Topic Area | User type | Sizing (Time Sized) | Description | Notes |
 |---- | ---- | ---- | ---- | ---- | ---- | ----|
 | 10 | Critical | App Usability | End User | 12 |  As a user, I want have an easy to use app, so that I don’t become frustrated and use another app. | None |
-| 11 | Medium | App Reliability | End User | 7 |  As a user, I want the app to function when I want it to function, so that I am not inconvenienced. | None |
+| 11 | Medium | App Reliability | End User | 11 |  As a user, I want the app to function when I want it to function, so that I am not inconvenienced. | None |
 | 12 | Low | App Performance | End User | 7 |  As a user, I want the app performance to be quick, so that my time is not wasted waiting on a message. | None |
 
 ##Methodology: 
