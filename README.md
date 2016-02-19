@@ -16,7 +16,8 @@ As stated above, our main obstacle is the lack of knowledge developing Android w
 
 ###User Requirements
 
-ID | Priority | Topic Area | User type | Sizing | Description
+ID | Priority | Topic Area | User type | Sizing | Description | 
+---- | ---- | ---- | ---- | ---- | ---- |
 0 | Critical | User Interaction | End User | 3 |  As a user I want to get an inspirational message every day to encourage me to encourage me throughout my life. |
 
 ID: 1 ; Priority: Medium ; Topic Area: User interaction ; User type: End user ; Sizing: 5
