@@ -13,9 +13,9 @@ The main risk that I believe we will face is a lack of knowledge of developing a
 ##Mitigation Strategy:
 As stated above, our main obstacle is the lack of knowledge developing Android wearable apps.  This can be overcome by a thorough, persistent accumulation of knowledge regarding Android wearable apps over the semester.  The Agile development methodology will work nicely with this.  The internet will be our main resource.  We will try to obtain another Android watch at some point, so that we have a backup if the original breaks.  Currently, our team has no experience working together.  However, using messaging apps, we will strive to keep each other up-to-date on the status of the overall project, and our individual parts in it.  We will keep each other accountable and hold in person meetings when necessary. 
 ##List of Requirements: 
------------------------------------------------------------------------------------------------------------------
+:-----------------------------------------------------------------------------------------------------------------:
 ###User Requirements
------------------------------------------------------------------------------------------------------------------
+:-----------------------------------------------------------------------------------------------------------------:
 ID: 0 ; Priority: Critical ; Topic Area: User interaction ; User type: End user ; Sizing: 3
 
 -As a user I want to get an inspirational message every day to encourage me to encourage me throughout my life. 
