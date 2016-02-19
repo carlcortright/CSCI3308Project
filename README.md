@@ -24,10 +24,12 @@ As stated above, our main obstacle is the lack of knowledge developing Android w
 
 ###User Requirements
 
-ID | Priority | Topic Area | User type | Sizing | Description | 
+ID | Priority | Topic Area | User type | Sizing | Description | Notes |
 ---- | ---- | ---- | ---- | ---- | ---- |
-0 | Critical | User Interaction | End User | 3 |  As a user I want to get an inspirational message every day to encourage me to encourage me throughout my life. |
-
+| 0 | Critical | User Interaction | End User | 3 |  As a user I want to get an inspirational message every day to encourage me to encourage me throughout my life. | None |
+| 1 | Medium | User Interaction | End User | 5 |  As a user, I want to have a beautiful interface so that I can show my friends the app without being embarrassed. | None |
+| 2 | Medium | User Interaction | End User | 5 |  As a user, I want to get messages when I wake up and before I have stressful events listed on my calendar so that I can  be encouraged during stressful parts of my life and wake up on the “right side of the bed.” | None |
+| 3 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities/  | None |
 ID: 1 ; Priority: Medium ; Topic Area: User interaction ; User type: End user ; Sizing: 5
 
 -As a user, I want to have a beautiful interface so that I can show my friends the app without being embarrassed 
