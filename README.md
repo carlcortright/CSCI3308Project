@@ -5,7 +5,7 @@ Group repository for our spring of 2016 CSCI3308-Software Development Methods an
 | Name | Email | Github |
 | ---- | ---- | ----|
 |Calvin Ly |calvin.ly@colorado.edu |  |
-|John Zavidniak | john.zavidniak@colorado.edu |  |
+|John Zavidniak | john.zavidniak@colorado.edu | John459 |
 |Carl Cortright | ckcortright@gmail.com | ckcortright |
 |Luke Meszar | luke.meszar@colorado.edu |   |
 |Chris Rhoda | christopher.rhoda@colorado.edu | chrisRhoda |
@@ -24,7 +24,7 @@ As stated above, our main obstacle is the lack of knowledge developing Android w
 
 ###User Requirements
 
-ID | Priority | Topic Area | User type | Sizing (Time Sized) | Description | Notes |
+| ID | Priority | Topic Area | User type | Sizing (Time Sized) | Description | Notes |
 |---- | ---- | ---- | ---- | ---- | ---- | ----|
 | 0 | Critical | User Interaction | End User | 8 |  As a user I want to get an inspirational message every day to encourage me to encourage me throughout my life. | None |
 | 1 | Medium | User Interaction | End User | 7 |  As a user, I want to have a beautiful interface so that I can show my friends the app without being embarrassed. | None |
@@ -32,14 +32,14 @@ ID | Priority | Topic Area | User type | Sizing (Time Sized) | Description | Not
 | 3 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
 
 ###Functional Requirements
-]ID | Priority | Topic Area | User type | Sizing (Time Sized) | Description | Notes |
+| ID | Priority | Topic Area | User type | Sizing (Time Sized) | Description | Notes |
 |---- | ---- | ---- | ---- | ---- | ---- | ----|
 | 4 | Critical | Learning development tools | Developer | 18 |  As a team member, I want to learn how to develop for Android wear so that I can contribute to our team’s project. (This will be an ongoing task throughout the project) | None |
-| 5 | Medium | User Interaction | End User | 5 |  As a user, I want to have a beautiful interface so that I can show my friends the app without being embarrassed. | None |
-| 6 | Medium | User Interaction | End User | 5 |  As a user, I want to get messages when I wake up and before I have stressful events listed on my calendar so that I can  be encouraged during stressful parts of my life and wake up on the “right side of the bed.” | None |
-| 7 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
-| 8 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
-| 8 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
+| 5 | Critical | Learning Development Tools | Developer | 12 |  As a developer, I want to create a database with encouraging phrases to be displayed on the app. | None |
+| 6 | Critical | Learning Development Tools | Developer | 4 |  As a developer, I want to come up with encouraging messages for our users so that users can be encouraged throughout their day. | None |
+| 7 | Critical | Learning Development Tools | Developer | 8 |  As a developer, I want to write code to access our database so that our app can function efficiently for users. | None |
+| 8 | Low | Learning Graphics Tools | Developer| 10 |  As a developer, I want to create an interface to display encouraging messages so that our users can have a beautiful interface to view those messages.  | None |
+| 9 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
 | 10 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
 | 11 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
 ID 4 ; Priority: Critical ; Topic Area: Learning development tools ; User type: Developer ; Sizing: 8
