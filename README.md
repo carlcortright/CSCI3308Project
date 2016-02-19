@@ -24,29 +24,29 @@ As stated above, our main obstacle is the lack of knowledge developing Android w
 
 ###User Requirements
 
-| ID | Priority | Topic Area | User type | Sizing (Time Sized) | Description | Notes |
+| ID | Priority | Topic Area | User type | Sizing (Time Sized) | Description | 
 |---- | ---- | ---- | ---- | ---- | ---- | ----|
-| 0 | Critical | User Interaction | End User | 8 |  As a user I want to get an inspirational message every day to encourage me to encourage me throughout my life. | None |
-| 1 | Medium | User Interaction | End User | 7 |  As a user, I want to have a beautiful interface so that I can show my friends the app without being embarrassed. | None |
-| 2 | Medium | User Interaction | End User | 6 |  As a user, I want to get messages when I wake up and before I have stressful events listed on my calendar so that I can  be encouraged during stressful parts of my life and wake up on the “right side of the bed.” | None |
-| 3 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | None |
+| 0 | Critical | User Interaction | End User | 8 |  As a user I want to get an inspirational message every day to encourage me to encourage me throughout my life. |
+| 1 | Medium | User Interaction | End User | 7 |  As a user, I want to have a beautiful interface so that I can show my friends the app without being embarrassed. | 
+| 2 | Medium | User Interaction | End User | 6 |  As a user, I want to get messages when I wake up and before I have stressful events listed on my calendar so that I can  be encouraged during stressful parts of my life and wake up on the “right side of the bed.” | 
+| 3 | Low | User Interaction | End User | 5 |  As a user I want to get messages when I am exercising or studying so that I can be motivated to keep doing these activities.  | 
 
 ###Functional Requirements
-| ID | Priority | Topic Area | User type | Sizing (Time Sized) | Description | Notes |
+| ID | Priority | Topic Area | User type | Sizing (Time Sized) | Description | 
 |---- | ---- | ---- | ---- | ---- | ---- | ----|
-| 4 | Critical | Learning development tools | Developer | 18 |  As a team member, I want to learn how to develop for Android wear so that I can contribute to our team’s project. (This will be an ongoing task throughout the project) | None |
-| 5 | Critical | Learning Development Tools | Developer | 12 |  As a developer, I want to create a database with encouraging phrases to be displayed on the app. | None |
-| 6 | Critical | Learning Development Tools | Developer | 4 |  As a developer, I want to come up with encouraging messages for our users so that users can be encouraged throughout their day. | None |
-| 7 | Critical | Learning Development Tools | Developer | 8 |  As a developer, I want to write code to access our database so that our app can function efficiently for users. | None |
-| 8 | Critical | Learning Graphics Tools | Developer| 10 |  As a developer, I want to create an interface to display encouraging messages so that our users can have a beautiful interface to view those messages.  | None |
-| 9 | Medium | Learning APIs | Developer | 4 |  As a developer, I want to learn how to use APIs for Google Calendar and Alarms so that the app can display messages that are timed with the events in the user’s life.  | None |
+| 4 | Critical | Learning development tools | Developer | 18 |  As a team member, I want to learn how to develop for Android wear so that I can contribute to our team’s project. (This will be an ongoing task throughout the project) | 
+| 5 | Critical | Learning Development Tools | Developer | 12 |  As a developer, I want to create a database with encouraging phrases to be displayed on the app. | 
+| 6 | Critical | Learning Development Tools | Developer | 4 |  As a developer, I want to come up with encouraging messages for our users so that users can be encouraged throughout their day. | 
+| 7 | Critical | Learning Development Tools | Developer | 8 |  As a developer, I want to write code to access our database so that our app can function efficiently for users. |
+| 8 | Critical | Learning Graphics Tools | Developer| 10 |  As a developer, I want to create an interface to display encouraging messages so that our users can have a beautiful interface to view those messages.  | 
+| 9 | Medium | Learning APIs | Developer | 4 |  As a developer, I want to learn how to use APIs for Google Calendar and Alarms so that the app can display messages that are timed with the events in the user’s life.  | 
 
 ###Non-Functional Requirements
-| ID | Priority | Topic Area | User type | Sizing (Time Sized) | Description | Notes |
+| ID | Priority | Topic Area | User type | Sizing (Time Sized) | Description |
 |---- | ---- | ---- | ---- | ---- | ---- | ----|
-| 10 | Critical | App Usability | End User | 12 |  As a user, I want have an easy to use app, so that I don’t become frustrated and use another app. | None |
-| 11 | Medium | App Reliability | End User | 11 |  As a user, I want the app to function when I want it to function, so that I am not inconvenienced. | None |
-| 12 | Low | App Performance | End User | 7 |  As a user, I want the app performance to be quick, so that my time is not wasted waiting on a message. | None |
+| 10 | Critical | App Usability | End User | 12 |  As a user, I want have an easy to use app, so that I don’t become frustrated and use another app. | 
+| 11 | Medium | App Reliability | End User | 11 |  As a user, I want the app to function when I want it to function, so that I am not inconvenienced. | 
+| 12 | Low | App Performance | End User | 7 |  As a user, I want the app performance to be quick, so that my time is not wasted waiting on a message. | 
 
 ##Methodology: 
 Our group plans to follow the agile development methodology. We think that agile will provide both the efficiency as well as the accountability that our team needs to complete our project by the end of the semester. For our app it is especially important that we can brainstorm and implement new features very quickly, making agile the best choice of methodologies. 
