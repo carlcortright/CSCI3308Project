@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:id="@+id/container" tools:context=".MainActivity"
     tools:deviceIds="wear"
-    android:background="@drawable/genie">
+    android:background="@drawable/dog">
 
     <TextView android:id="@+id/text" app:layout_box="all" android:layout_width="match_parent"
         android:layout_height="match_parent" android:text="@string/hello_world" android:gravity="center"/>
