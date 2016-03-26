@@ -6,13 +6,32 @@
     android:layout_height="match_parent" android:id="@+id/container" tools:context=".MainActivity"
     tools:deviceIds="wear"
     android:background="@drawable/blue_bubbles">
-
+    <!--
     <TextView android:id="@+id/text" app:layout_box="all" android:layout_width="match_parent"
         android:layout_height="match_parent" android:text="@string/hello_world" android:gravity="center"/>
 
     <TextView android:id="@+id/clock" app:layout_box="all" android:layout_gravity="bottom|start"
         android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:textColor="@android:color/white" android:layout_centerInParent="true" />
+    -->
+    <LinearLayout
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Quote"
+            android:onClick="onClick"/>
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+    </LinearLayout>
+
   <!--
     <Button
         android:layout_width="wrap_content"

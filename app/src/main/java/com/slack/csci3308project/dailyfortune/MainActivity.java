@@ -1,16 +1,20 @@
 package com.slack.csci3308project.dailyfortune;
 
+import android.app.ListActivity;
 import android.os.Bundle;
 import android.support.wearable.activity.WearableActivity;
 import android.support.wearable.view.BoxInsetLayout;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
-public class MainActivity extends WearableActivity {
+public class MainActivity extends WearableActivity  {
 
     private static final SimpleDateFormat AMBIENT_DATE_FORMAT =
             new SimpleDateFormat("HH:mm", Locale.US);
@@ -18,6 +22,8 @@ public class MainActivity extends WearableActivity {
     private BoxInsetLayout mContainerView;
     private TextView mTextView;
     private TextView mClockView;
+
+    private GeneralQuoteDataSource datasource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +33,28 @@ public class MainActivity extends WearableActivity {
 
         mContainerView = (BoxInsetLayout) findViewById(R.id.container);
         mTextView = (TextView) findViewById(R.id.text);
-        mClockView = (TextView) findViewById(R.id.clock);
+        //mClockView = (TextView) findViewById(R.id.clock);
+
+        datasource = new GeneralQuoteDataSource(this);
+        datasource.open();
+
+        List<GeneralQuote> values = datasource.getAllGeneralQuotes();
+    }
+
+    public void onClick(View view){
+
+    }
+
+    @Override
+    protected void onResume(){
+        datasource.open();
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause(){
+        datasource.close();
+        super.onPause();
     }
 
     @Override
@@ -62,3 +89,6 @@ public class MainActivity extends WearableActivity {
         }
     }
 }
+
+
+
