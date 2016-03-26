@@ -1,11 +1,9 @@
 package com.slack.csci3308project.dailyfortune;
 
-import android.app.ListActivity;
 import android.os.Bundle;
 import android.support.wearable.activity.WearableActivity;
 import android.support.wearable.view.BoxInsetLayout;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 
@@ -23,7 +21,9 @@ public class MainActivity extends WearableActivity  {
     private TextView mTextView;
     private TextView mClockView;
 
-    private GeneralQuoteDataSource datasource;
+    private GeneralQuoteDataSource generalDatasource;
+    private SportsQuoteDataSource sportsDatasource;
+    private EducationalQuoteDataSource educationalDatasource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +35,17 @@ public class MainActivity extends WearableActivity  {
         mTextView = (TextView) findViewById(R.id.text);
         //mClockView = (TextView) findViewById(R.id.clock);
 
-        datasource = new GeneralQuoteDataSource(this);
-        datasource.open();
+        generalDatasource = new GeneralQuoteDataSource(this);
+        generalDatasource.open();
+        List<GeneralQuote> generalValues = generalDatasource.getAllGeneralQuotes();
 
-        List<GeneralQuote> values = datasource.getAllGeneralQuotes();
+        sportsDatasource = new SportsQuoteDataSource(this);
+        sportsDatasource.open();
+        List<SportsQuote> sportsValue = sportsDatasource.getAllSportsQuotes();
+
+        educationalDatasource = new EducationalQuoteDataSource(this);
+        educationalDatasource.open();
+        List<EducationalQuote> educationalValues = educationalDatasource.getAllEducationalQuotes();
     }
 
     public void onClick(View view){
@@ -47,13 +54,13 @@ public class MainActivity extends WearableActivity  {
 
     @Override
     protected void onResume(){
-        datasource.open();
+        generalDatasource.open();
         super.onResume();
     }
 
     @Override
     protected void onPause(){
-        datasource.close();
+        generalDatasource.close();
         super.onPause();
     }
 
