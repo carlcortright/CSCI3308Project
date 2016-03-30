@@ -30,6 +30,12 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@color/black"/>
+        <Button android:id="@+id/button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="New Quote"
+            android:layout_gravity="bottom"
+            android:onClick="onClick"/>
     </FrameLayout>
 
 
