@@ -6,11 +6,13 @@ import android.support.wearable.view.BoxInsetLayout;
 import android.view.View;
 import android.widget.TextView;
 
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
-public class MainActivity extends WearableActivity {
+public class MainActivity extends WearableActivity  {
 
     private static final SimpleDateFormat AMBIENT_DATE_FORMAT =
             new SimpleDateFormat("HH:mm", Locale.US);
@@ -19,6 +21,10 @@ public class MainActivity extends WearableActivity {
     private TextView mTextView;
     private TextView mClockView;
 
+    private GeneralQuoteDataSource generalDatasource;
+    private SportsQuoteDataSource sportsDatasource;
+    private EducationalQuoteDataSource educationalDatasource;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +32,45 @@ public class MainActivity extends WearableActivity {
         setAmbientEnabled();
 
         mContainerView = (BoxInsetLayout) findViewById(R.id.container);
-        mTextView = (TextView) findViewById(R.id.text);
-        mClockView = (TextView) findViewById(R.id.clock);
+        TextView quoteTextView = (TextView) findViewById(R.id.quote);
+        //TextView authorTextView = (TextView) findViewById(R.id.author);
+
+        generalDatasource = new GeneralQuoteDataSource(this);
+        generalDatasource.open();
+        List<GeneralQuote> generalValues = generalDatasource.getAllGeneralQuotes();
+
+        sportsDatasource = new SportsQuoteDataSource(this);
+        sportsDatasource.open();
+        List<SportsQuote> sportsValue = sportsDatasource.getAllSportsQuotes();
+
+        educationalDatasource = new EducationalQuoteDataSource(this);
+        educationalDatasource.open();
+        List<EducationalQuote> educationalValues = educationalDatasource.getAllEducationalQuotes();
+
+        EducationalQuote randomEQuote = educationalDatasource.getRandomEducationalQuote();
+
+        String eduQuote = randomEQuote.getQuote();
+        String eduAuthor = randomEQuote.getAuthor();
+        String eduQuoteAuthor = eduQuote + "\n -" + eduAuthor;
+
+        quoteTextView.setText(eduQuoteAuthor);
+        //authorTextView.setText(eduAuthor);
+    }
+
+    public void onClick(View view){
+
+    }
+
+    @Override
+    protected void onResume(){
+        generalDatasource.open();
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause(){
+        generalDatasource.close();
+        super.onPause();
     }
 
     @Override
@@ -62,3 +105,6 @@ public class MainActivity extends WearableActivity {
         }
     }
 }
+
+
+
