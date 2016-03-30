@@ -14,6 +14,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
 public class EducationalQuoteDataSource {
     private SQLiteDatabase database;
@@ -54,7 +55,7 @@ public class EducationalQuoteDataSource {
 
         Cursor cursor = database.query(DatabaseHelper.TABLE_EDUCATIONAL, allColumns, null, null, null, null, null);
 
-        int max = cursor.getCount();
+        int max = cursor.getCount() - 1;
 
         int randNumber = randInt(1, max);
 
@@ -84,7 +85,7 @@ public class EducationalQuoteDataSource {
     }
 
 
-    private EducationalQuote cursorToQuote(Cursor cursor){
+    private EducationalQuote cursorToQuote(Cursor cursor) throws SQLException {
         EducationalQuote eQuote = new EducationalQuote();
         eQuote.setId(cursor.getInt(0));
         eQuote.setQuote(cursor.getString(1));
