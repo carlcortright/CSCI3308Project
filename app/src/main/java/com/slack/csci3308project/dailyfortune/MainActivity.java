@@ -43,10 +43,16 @@ public class MainActivity extends WearableActivity  {
         sportsDatasource.open();
         List<SportsQuote> sportsValue = sportsDatasource.getAllSportsQuotes();
 
+        //educationalDatasource = new EducationalQuoteDataSource(this);
+        //educationalDatasource.open();
+        //List<EducationalQuote> educationalValues = educationalDatasource.getAllEducationalQuotes();
+
+    }
+
+    public void onClick(View target){
         educationalDatasource = new EducationalQuoteDataSource(this);
         educationalDatasource.open();
-        List<EducationalQuote> educationalValues = educationalDatasource.getAllEducationalQuotes();
-
+        TextView quoteTextView = (TextView) findViewById(R.id.quote);
         EducationalQuote randomEQuote = educationalDatasource.getRandomEducationalQuote();
 
         String eduQuote = randomEQuote.getQuote();
@@ -54,11 +60,6 @@ public class MainActivity extends WearableActivity  {
         String eduQuoteAuthor = eduQuote + "\n -" + eduAuthor;
 
         quoteTextView.setText(eduQuoteAuthor);
-        //authorTextView.setText(eduAuthor);
-    }
-
-    public void onClick(View view){
-
     }
 
     @Override

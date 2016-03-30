@@ -2,6 +2,13 @@
 <items version="2" >
 
     <item
+        jar="/home/luke/Dropbox/CSCI_3308/CSCI3308Project/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="/home/luke/Dropbox/CSCI_3308/CSCI3308Project/app/build/intermediates/pre-dexed/debug/classes-339cf38ca56e4b59af660882b74e8731fe346d6f.jar" />
+    </item>
+    <item
         jar="/home/luke/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.0/support-annotations-22.2.0.jar"
         jumboMode="false"
         revision="23.0.1"
@@ -23,20 +30,6 @@
         <dex dex="/home/luke/Dropbox/CSCI_3308/CSCI3308Project/app/build/intermediates/pre-dexed/debug/classes-da13ae4436706804b9332441d3137afd9811a0e4.jar" />
     </item>
     <item
-        jar="/home/luke/Dropbox/CSCI_3308/CSCI3308Project/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="/home/luke/Dropbox/CSCI_3308/CSCI3308Project/app/build/intermediates/pre-dexed/debug/classes-e7dcfe13bd85a00dcb97a9fe8c1b30b2bd3fbd1e.jar" />
-    </item>
-    <item
-        jar="/home/luke/Dropbox/CSCI_3308/CSCI3308Project/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="/home/luke/Dropbox/CSCI_3308/CSCI3308Project/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-96770ccfd2eea833ce4e60f67ae871f94ab82d67.jar" />
-    </item>
-    <item
         jar="/home/luke/Dropbox/CSCI_3308/CSCI3308Project/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/8.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
@@ -44,11 +37,11 @@
         <dex dex="/home/luke/Dropbox/CSCI_3308/CSCI3308Project/app/build/intermediates/pre-dexed/debug/classes-f46ee4b0b69d22344096be81a09a94734eb0a242.jar" />
     </item>
     <item
-        jar="/home/luke/Dropbox/CSCI_3308/CSCI3308Project/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jar="/home/luke/Dropbox/CSCI_3308/CSCI3308Project/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
-        <dex dex="/home/luke/Dropbox/CSCI_3308/CSCI3308Project/app/build/intermediates/pre-dexed/debug/classes-339cf38ca56e4b59af660882b74e8731fe346d6f.jar" />
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="/home/luke/Dropbox/CSCI_3308/CSCI3308Project/app/build/intermediates/pre-dexed/debug/classes-e7dcfe13bd85a00dcb97a9fe8c1b30b2bd3fbd1e.jar" />
     </item>
     <item
         jar="/home/luke/Dropbox/CSCI_3308/CSCI3308Project/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.1.0/jars/classes.jar"
@@ -56,6 +49,13 @@
         revision="23.0.1"
         sha1="82825756edeeb3b56b15e73b2edd56e93da5a444">
         <dex dex="/home/luke/Dropbox/CSCI_3308/CSCI3308Project/app/build/intermediates/pre-dexed/debug/classes-2a2ec823820ae36ee1cf97518186f54724e6493e.jar" />
+    </item>
+    <item
+        jar="/home/luke/Dropbox/CSCI_3308/CSCI3308Project/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.0/jars/libs/internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="/home/luke/Dropbox/CSCI_3308/CSCI3308Project/app/build/intermediates/pre-dexed/debug/internal_impl-22.2.0-96770ccfd2eea833ce4e60f67ae871f94ab82d67.jar" />
     </item>
 
 </items>
