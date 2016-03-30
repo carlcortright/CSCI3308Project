@@ -50,7 +50,7 @@ public class SportsQuoteDataSource {
     }
 
     public SportsQuote getRandomSportsQuote(){
-        SportsQuote eQuote = new SportsQuote();
+        SportsQuote sQuote = new SportsQuote();
 
         Cursor cursor = database.query(DatabaseHelper.TABLE_SPORTS, allColumns, null, null, null, null, null);
 
@@ -62,12 +62,12 @@ public class SportsQuoteDataSource {
         cursor.moveToFirst();
         while (!cursor.isAfterLast()){
             if (counter == randNumber){
-                eQuote = cursorToQuote(cursor);
+                sQuote = cursorToQuote(cursor);
             }
             cursor.moveToNext();
             counter++;
         }
-        return eQuote;
+        return sQuote;
     }
 
     public static int randInt(int min, int max) {
