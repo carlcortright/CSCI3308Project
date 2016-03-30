@@ -7,6 +7,7 @@ package com.slack.csci3308project.dailyfortune;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -47,6 +48,41 @@ public class EducationalQuoteDataSource {
         return educationalQuotes;
 
     }
+
+    public EducationalQuote getRandomEducationalQuote(){
+        EducationalQuote eQuote = new EducationalQuote();
+
+        Cursor cursor = database.query(DatabaseHelper.TABLE_EDUCATIONAL, allColumns, null, null, null, null, null);
+
+        int max = cursor.getCount();
+
+        int randNumber = randInt(1, max);
+
+        int counter = 0;
+        cursor.moveToFirst();
+        while (!cursor.isAfterLast()){
+            if (counter == randNumber){
+                eQuote = cursorToQuote(cursor);
+            }
+            cursor.moveToNext();
+            counter++;
+        }
+        return eQuote;
+    }
+
+
+    public static int randInt(int min, int max) {
+
+        // Usually this can be a field rather than a method variable
+        Random rand = new Random();
+
+        // nextInt is normally exclusive of the top value,
+        // so add 1 to make it inclusive
+        int randomNum = rand.nextInt((max - min) + 1) + min;
+
+        return randomNum;
+    }
+
 
     private EducationalQuote cursorToQuote(Cursor cursor){
         EducationalQuote eQuote = new EducationalQuote();

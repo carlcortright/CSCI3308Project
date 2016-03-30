@@ -46,6 +46,8 @@ public class MainActivity extends WearableActivity  {
         educationalDatasource = new EducationalQuoteDataSource(this);
         educationalDatasource.open();
         List<EducationalQuote> educationalValues = educationalDatasource.getAllEducationalQuotes();
+
+        EducationalQuote eQuote = educationalDatasource.getRandomEducationalQuote();
     }
 
     public void onClick(View view){
