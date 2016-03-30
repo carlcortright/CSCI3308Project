@@ -32,8 +32,8 @@ public class MainActivity extends WearableActivity  {
         setAmbientEnabled();
 
         mContainerView = (BoxInsetLayout) findViewById(R.id.container);
-        mTextView = (TextView) findViewById(R.id.text);
-        //mClockView = (TextView) findViewById(R.id.clock);
+        TextView quoteTextView = (TextView) findViewById(R.id.quote);
+        //TextView authorTextView = (TextView) findViewById(R.id.author);
 
         generalDatasource = new GeneralQuoteDataSource(this);
         generalDatasource.open();
@@ -47,7 +47,14 @@ public class MainActivity extends WearableActivity  {
         educationalDatasource.open();
         List<EducationalQuote> educationalValues = educationalDatasource.getAllEducationalQuotes();
 
-        EducationalQuote eQuote = educationalDatasource.getRandomEducationalQuote();
+        EducationalQuote randomEQuote = educationalDatasource.getRandomEducationalQuote();
+
+        String eduQuote = randomEQuote.getQuote();
+        String eduAuthor = randomEQuote.getAuthor();
+        String eduQuoteAuthor = eduQuote + "\n -" + eduAuthor;
+
+        quoteTextView.setText(eduQuoteAuthor);
+        //authorTextView.setText(eduAuthor);
     }
 
     public void onClick(View view){

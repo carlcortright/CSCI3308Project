@@ -2,10 +2,14 @@
 <android.support.wearable.view.BoxInsetLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:id="@+id/container" tools:context=".MainActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    tools:context=".MainActivity"
     tools:deviceIds="wear"
     android:background="@drawable/blue_bubbles">
+    android:padding="15dp">
     <!--
     <TextView android:id="@+id/text" app:layout_box="all" android:layout_width="match_parent"
         android:layout_height="match_parent" android:text="@string/hello_world" android:gravity="center"/>
@@ -14,29 +18,19 @@
         android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:textColor="@android:color/white" android:layout_centerInParent="true" />
     -->
-    <LinearLayout
-        android:id="@+id/group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        app:layout_box="all">
 
-        <Button
-            android:id="@+id/show"
+        <TextView
+            android:id="@+id/quote"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show Quote"
-            android:onClick="onClick"/>
+            android:gravity="center"
+            android:textColor="@color/black"/>
+    </FrameLayout>
 
-        <ListView
-            android:id="@android:id/list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"></ListView>
-    </LinearLayout>
-
-  <!--
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
-        -->
 
 </android.support.wearable.view.BoxInsetLayout>
