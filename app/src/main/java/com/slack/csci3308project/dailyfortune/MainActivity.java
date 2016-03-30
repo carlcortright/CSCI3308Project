@@ -50,7 +50,7 @@ public class MainActivity extends WearableActivity  {
 
     }
 
-    public void onClick(View target){
+    /*public void onClick(View target){
         educationalDatasource = new EducationalQuoteDataSource(this);
         educationalDatasource.open();
         TextView quoteTextView = (TextView) findViewById(R.id.quote);
@@ -59,8 +59,19 @@ public class MainActivity extends WearableActivity  {
         String eduQuote = randomEQuote.getQuote();
         String eduAuthor = randomEQuote.getAuthor();
         String eduQuoteAuthor = eduQuote + "\n -" + eduAuthor;
-
         quoteTextView.setText(eduQuoteAuthor);
+    }*/
+
+    public void onClick(View target){
+        sportsDatasource = new SportsQuoteDataSource(this);
+        sportsDatasource.open();
+        TextView quoteTextView = (TextView) findViewById(R.id.quote);
+        SportsQuote randomSQuote = sportsDatasource.getRandomSportsQuote();
+
+        String spQuote = randomSQuote.getQuote();
+        String spAuthor = randomSQuote.getAuthor();
+        String spQuoteAuthor = spQuote + "\n -" + spAuthor;
+        quoteTextView.setText(spQuoteAuthor);
     }
 
     @Override
