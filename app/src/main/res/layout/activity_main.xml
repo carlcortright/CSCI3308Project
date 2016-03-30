@@ -8,8 +8,8 @@
     android:id="@+id/container"
     tools:context=".MainActivity"
     tools:deviceIds="wear"
+    android:padding="15dp"
     android:background="@drawable/blue_bubbles">
-    android:padding="15dp">
     <!--
     <TextView android:id="@+id/text" app:layout_box="all" android:layout_width="match_parent"
         android:layout_height="match_parent" android:text="@string/hello_world" android:gravity="center"/>
@@ -30,6 +30,12 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textColor="@color/black"/>
+        <Button android:id="@+id/button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="New Quote"
+            android:layout_gravity="bottom"
+            android:onClick="onClick"/>
     </FrameLayout>
 
 
