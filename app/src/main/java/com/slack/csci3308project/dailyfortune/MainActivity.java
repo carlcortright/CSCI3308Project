@@ -1,6 +1,10 @@
 package com.slack.csci3308project.dailyfortune;
 
+import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.AlarmClock;
 import android.support.wearable.activity.WearableActivity;
 import android.support.wearable.view.BoxInsetLayout;
 import android.util.Log;
@@ -15,8 +19,12 @@ import java.util.Locale;
 
 public class MainActivity extends WearableActivity  {
 
+    private static final int ALARM_SEARCH_REQUEST_CODE = 237;
+
     private static final SimpleDateFormat AMBIENT_DATE_FORMAT =
             new SimpleDateFormat("HH:mm", Locale.US);
+
+    private QuotesTopics quotesTopics = new QuotesTopics();
 
     private BoxInsetLayout mContainerView;
     private TextView mTextView;
@@ -36,6 +44,7 @@ public class MainActivity extends WearableActivity  {
         TextView quoteTextView = (TextView) findViewById(R.id.quote);
         //TextView authorTextView = (TextView) findViewById(R.id.author);
 
+
         generalDatasource = new GeneralQuoteDataSource(this);
         generalDatasource.open();
         List<GeneralQuote> generalValues = generalDatasource.getAllGeneralQuotes();
@@ -48,6 +57,35 @@ public class MainActivity extends WearableActivity  {
         //educationalDatasource.open();
         //List<EducationalQuote> educationalValues = educationalDatasource.getAllEducationalQuotes();
 
+        this.searchAlarms();
+    }
+
+    public void searchAlarms() {
+        Intent searchIntent = new Intent(AlarmClock.ACTION_SHOW_ALARMS);
+        searchIntent.putExtra(AlarmClock.EXTRA_ALARM_SEARCH_MODE, AlarmClock.ALARM_SEARCH_MODE_ALL);
+        startActivityForResult(searchIntent, ALARM_SEARCH_REQUEST_CODE);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode != ALARM_SEARCH_REQUEST_CODE) {
+            return; //not handling anything else yet
+        }
+        if (resultCode == RESULT_OK) {
+            //TODO: Determine if it is a morning alarm (wakeup).
+            Uri uri = data.getData();
+            Cursor cursor = getContentResolver().query(uri, null, null, null, null);
+            cursor.moveToFirst();
+            for (int i = 0; i < cursor.getColumnCount(); i++) {
+                System.out.println(cursor.getString(i));
+            }
+
+            boolean isMorning = true;
+            GeneralQuote morningQuote = quotesTopics.pickMorningQuote(generalDatasource);
+            //display this quote at the necessary time.
+        } else {
+            System.out.println(resultCode);
+        }
     }
 
     /*public void onClick(View target){
