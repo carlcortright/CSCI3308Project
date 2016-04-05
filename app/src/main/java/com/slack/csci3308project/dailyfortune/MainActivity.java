@@ -44,7 +44,6 @@ public class MainActivity extends WearableActivity  {
         TextView quoteTextView = (TextView) findViewById(R.id.quote);
         //TextView authorTextView = (TextView) findViewById(R.id.author);
 
-
         generalDatasource = new GeneralQuoteDataSource(this);
         generalDatasource.open();
         List<GeneralQuote> generalValues = generalDatasource.getAllGeneralQuotes();
@@ -57,15 +56,15 @@ public class MainActivity extends WearableActivity  {
         //educationalDatasource.open();
         //List<EducationalQuote> educationalValues = educationalDatasource.getAllEducationalQuotes();
 
-        this.searchAlarms();
+        //this.searchAlarms();
     }
 
-    public void searchAlarms() {
+    /*public void searchAlarms() {
         Intent searchIntent = new Intent(AlarmClock.ACTION_SHOW_ALARMS);
         searchIntent.putExtra(AlarmClock.EXTRA_ALARM_SEARCH_MODE, AlarmClock.ALARM_SEARCH_MODE_ALL);
         startActivityForResult(searchIntent, ALARM_SEARCH_REQUEST_CODE);
-    }
-
+    }*/
+    /*
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode != ALARM_SEARCH_REQUEST_CODE) {
@@ -86,9 +85,9 @@ public class MainActivity extends WearableActivity  {
         } else {
             System.out.println(resultCode);
         }
-    }
+    }*/
 
-    /*public void onClick(View target){
+    public void onClickEducational(View target){
         educationalDatasource = new EducationalQuoteDataSource(this);
         educationalDatasource.open();
         TextView quoteTextView = (TextView) findViewById(R.id.quote);
@@ -98,9 +97,18 @@ public class MainActivity extends WearableActivity  {
         String eduAuthor = randomEQuote.getAuthor();
         String eduQuoteAuthor = eduQuote + "\n -" + eduAuthor;
         quoteTextView.setText(eduQuoteAuthor);
-    }*/
 
-    /*public void onClick(View target){
+        View generalButton = findViewById(R.id.button);
+        generalButton.setVisibility(View.GONE);
+        View sportsButton = findViewById(R.id.button3);
+        sportsButton.setVisibility(View.GONE);
+        View educationalButton = findViewById(R.id.button2);
+        educationalButton.setVisibility(View.GONE);
+        View moreQuotesButton = findViewById(R.id.button4);
+        moreQuotesButton.setVisibility(View.VISIBLE);
+    }
+
+    public void onClickSports(View target){
         sportsDatasource = new SportsQuoteDataSource(this);
         sportsDatasource.open();
         TextView quoteTextView = (TextView) findViewById(R.id.quote);
@@ -110,9 +118,18 @@ public class MainActivity extends WearableActivity  {
         String spAuthor = randomSQuote.getAuthor();
         String spQuoteAuthor = spQuote + "\n -" + spAuthor;
         quoteTextView.setText(spQuoteAuthor);
-    }*/
 
-    public void onClick(View target){
+        View generalButton = findViewById(R.id.button);
+        generalButton.setVisibility(View.GONE);
+        View sportsButton = findViewById(R.id.button3);
+        sportsButton.setVisibility(View.GONE);
+        View educationalButton = findViewById(R.id.button2);
+        educationalButton.setVisibility(View.GONE);
+        View moreQuotesButton = findViewById(R.id.button4);
+        moreQuotesButton.setVisibility(View.VISIBLE);
+    }
+
+    public void onClickGeneral(View target){
         generalDatasource = new GeneralQuoteDataSource(this);
         generalDatasource.open();
         TextView quoteTextView = (TextView) findViewById(R.id.quote);
@@ -122,6 +139,29 @@ public class MainActivity extends WearableActivity  {
         String genAuthor = randomGQuote.getAuthor();
         String genQuoteAuthor = genQuote + "\n -" + genAuthor;
         quoteTextView.setText(genQuoteAuthor);
+
+        View generalButton = findViewById(R.id.button);
+        generalButton.setVisibility(View.GONE);
+        View sportsButton = findViewById(R.id.button3);
+        sportsButton.setVisibility(View.GONE);
+        View educationalButton = findViewById(R.id.button2);
+        educationalButton.setVisibility(View.GONE);
+        View moreQuotesButton = findViewById(R.id.button4);
+        moreQuotesButton.setVisibility(View.VISIBLE);
+    }
+
+    public void onClickMore(View target){
+        View generalButton = findViewById(R.id.button);
+        generalButton.setVisibility(View.VISIBLE);
+        View sportsButton = findViewById(R.id.button3);
+        sportsButton.setVisibility(View.VISIBLE);
+        View educationalButton = findViewById(R.id.button2);
+        educationalButton.setVisibility(View.VISIBLE);
+        View moreQuotesButton = findViewById(R.id.button4);
+        moreQuotesButton.setVisibility(View.GONE);
+
+        TextView quoteTextView = (TextView) findViewById(R.id.quote);
+        quoteTextView.setText("");
     }
 
     @Override

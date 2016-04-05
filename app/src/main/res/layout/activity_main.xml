@@ -31,12 +31,39 @@
             android:gravity="center"
             android:textSize="10sp"
             android:textColor="@color/black"/>
+
         <Button android:id="@+id/button"
-            android:layout_width="50dp"
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:text="New Quote"
-            android:layout_gravity="bottom"
-            android:onClick="onClick"/>
+            android:text="General"
+            android:layout_gravity="center_horizontal|top"
+            android:onClick="onClickGeneral"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Sports"
+            android:layout_gravity="center_horizontal|bottom"
+            android:onClick="onClickSports" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="More Quotes"
+            android:layout_gravity="center_horizontal|bottom"
+            android:onClick="onClickMore"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Educational"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:onClick="onClickEducational" />
     </FrameLayout>
 
 
