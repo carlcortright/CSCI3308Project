@@ -33,50 +33,64 @@ public class MainActivityTest {
     public ActivityTestRule<MainActivity> myActivityRule =
             new ActivityTestRule<MainActivity>(MainActivity.class);
 
+
+    //Test that a quote is displayed when the general button is clicked.
     @Test
     public void generalButtonShouldGetQuote(){
         onView(withId(R.id.button)).perform(click());
         onView(withId(R.id.quote)).check(matches(isDisplayed()));
     }
 
+    //Test that a quote is displayed when the sports button is clicked.
     @Test
     public void sportsButtonShouldGetQuote() {
         onView(withId(R.id.button3)).perform(click());
         onView(withId(R.id.quote)).check(matches(isDisplayed()));
     }
 
+    //Test that a quote is displayed when the educational button is clicked.
     @Test
         public void educationalButtonShouldGetQuote() {
             onView(withId(R.id.button2)).perform(click());
             onView(withId(R.id.quote)).check(matches(isDisplayed()));
         }
 
+    //Test that when the "General" button is clicked, all the quotes buttons disappear and the
+    //"More Quotes" button is displayed.
     @Test
     public void generalClickHidesButtons(){
         onView(withId(R.id.button)).perform(click());
         onView(withId(R.id.button)).check(matches(not(isDisplayed())));
         onView(withId(R.id.button2)).check(matches(not(isDisplayed())));
         onView(withId(R.id.button3)).check(matches(not(isDisplayed())));
+        onView(withId(R.id.button4)).check(matches(isDisplayed()));
     }
 
+    //Test that when the "Educational" button is clicked, all the quotes buttons disappear and the
+    //"More Quotes" button is displayed.
     @Test
     public void educationalClickHidesButtons(){
         onView(withId(R.id.button2)).perform(click());
         onView(withId(R.id.button)).check(matches(not(isDisplayed())));
         onView(withId(R.id.button2)).check(matches(not(isDisplayed())));
         onView(withId(R.id.button3)).check(matches(not(isDisplayed())));
+        onView(withId(R.id.button4)).check(matches(isDisplayed()));
     }
 
+    //Test that when the "Sports" button is clicked, all the quotes buttons disappear and the
+    //"More Quotes" button is displayed.
     @Test
     public void sportsClickHidesButtons(){
         onView(withId(R.id.button3)).perform(click());
         onView(withId(R.id.button)).check(matches(not(isDisplayed())));
         onView(withId(R.id.button2)).check(matches(not(isDisplayed())));
         onView(withId(R.id.button3)).check(matches(not(isDisplayed())));
+        onView(withId(R.id.button4)).check(matches(isDisplayed()));
     }
 
+    //Test that clicking the "More Quotes" button displayed the three quotes buttons and hides the old quote
     @Test
-    public void moreQuotesTest(){
+    public void moreQuotesTest() {
         onView(withId(R.id.button)).perform(click());
         onView(withId(R.id.button4)).perform(click());
         onView(withId(R.id.button)).check(matches(isDisplayed()));
