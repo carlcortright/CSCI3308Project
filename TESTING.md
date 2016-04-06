@@ -28,7 +28,7 @@ Every smartwatch user should wake up with the proper words of encouragement to s
 
 | Test Pass?: | Pass  |
 | ---- | ---- |
-| Notes and Issues |     |
+| Notes and Issues |                                                            |
 
 ## User Acceptance Test Plan 2
 | User Case ID | UC-02 |
