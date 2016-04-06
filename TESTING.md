@@ -6,4 +6,4 @@
 | Users: | Everyday Android Wear users (who play sports) |
 | Preconditions: | The sports table is populated with applicable quotes in the database. |
 | Post-Conditions: | User finds the quote enjoyable |
-| Flow of Events: | ---- |
+| Flow of Events: | Actor Action | System Response | Comments |
