@@ -19,6 +19,7 @@ import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.action.ViewActions.closeSoftKeyboard;
 import static android.support.test.espresso.action.ViewActions.typeText;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
+import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.core.IsNull.notNullValue;
@@ -33,7 +34,13 @@ public class MainActivityTest {
     @Test
     public void generalButtonShouldGetQuote(){
         onView(withId(R.id.button)).perform(click());
-        onView(withId(R.id.quote)).check(matches(notNullValue()));
+        onView(withId(R.id.quote)).check(matches(isDisplayed()));
+    }
+
+    @Test
+    public  void sportsButtonShouldGetQuote() {
+        onView(withId(R.id.button3)).perform(click());
+        onView(withId(R.id.quote)).check(matches(isDisplayed()));
     }
 
 }
