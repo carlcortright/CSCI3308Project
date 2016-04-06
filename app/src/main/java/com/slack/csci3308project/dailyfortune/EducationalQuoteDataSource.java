@@ -1,9 +1,5 @@
 package com.slack.csci3308project.dailyfortune;
 
-/**
- * Created by luke on 3/24/16.
- */
-
 
 import java.util.ArrayList;
 import java.util.List;
