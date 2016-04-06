@@ -52,18 +52,18 @@ Every smartwatch user should wake up with the proper words of encouragement to s
 ## User Acceptance Test Plan 3
 | User Case ID | UC-03 |
 | ---- | ---- |
-| **User Case Name:** |      |
-| **Description:** |     |
-| **Users:** |     |
-| **Preconditions:** |      |
-| **Post-Conditions:** |      |
+| **User Case Name:** | Educational quote randomness |
+| **Description:** | Check that the button to educational quotes works, check that the button back to the homescreen works, and  ensure that a different education related motivational quote is displayed each time the button is pressed  |
+| **Users:** | Everyday Android Wear Users |
+| **Preconditions:** | The educational quote table in the database is populated with a variety of different quotes, and the app is on the main page |
+| **Post-Conditions:** | An encouraging educational quote is displayed on the screen |
 
 | Flow of Events: | Actor Action | System Response | Comments |
 | ---- | ---- | ---- | ---- |
-|      |      |      |      | 
-|      |      |      |      |
-|      |      |      |      |
+|      | 1. User presses educational quote button | An education themed quote is displayed on the screen  |      | 
+|      |  2. User presses the button to navigate back to the main screen  | The main screen is displayed, with the 3 different options |      |
+|      |  3. User presses educational quote button | Another education themed quote is displayed on the screen, this one different than the one displayed after Actor Action 1   |      |
 
-| Test Pass?: |     |
+| Test Pass?: | Pass  |
 | ---- | ---- |
 | **Notes and Issues** |     |
