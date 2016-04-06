@@ -43,4 +43,10 @@ public class MainActivityTest {
         onView(withId(R.id.quote)).check(matches(isDisplayed()));
     }
 
+    @Test
+    public  void educationalButtonShouldGetQuote() {
+        onView(withId(R.id.button2)).perform(click());
+        onView(withId(R.id.quote)).check(matches(isDisplayed()));
+    }
+
 }
