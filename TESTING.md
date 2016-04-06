@@ -16,3 +16,8 @@
 | Test Pass?: |     |
 | ---- | ---- |
 | Notes and Issues |     |
+
+## User Acceptance Test Plan 2
+| User Case ID | UC-02 |
+| ---- | ---- |
+| User Case Name: | 
