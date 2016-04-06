@@ -58,7 +58,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     public void databaseExist() {
         File dbFile = myContext.getDatabasePath(DB_NAME);
-       // dbFile.delete();
+        //dbFile.delete();
         if (!dbFile.exists()){
             try {
                 copyDatabase(dbFile);
