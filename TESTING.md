@@ -26,7 +26,7 @@ Every smartwatch user should wake up with the proper words of encouragement to s
 |      | 2. User presses button to navigate back to main screen | The main screen is displayed, with the 3 options |      |
 |      | 3. User presses sports quote button |  A sports related quote is displayed, it is a different quote than before ( 1 )    |      |
 
-| Test Pass?: | Pass / Fail  |
+| Test Pass?: | --------------------------------------------------------- Pass / Fail ---------------------------------------------------------  |
 | ---- | ---- |
 | Notes and Issues |                                                            |
 
@@ -45,7 +45,7 @@ Every smartwatch user should wake up with the proper words of encouragement to s
 |      |  2. User presses button to navigate back to the main screen |  The main screen is displayed, with the 3 different options |      |
 |      |  3. User presses general quote button  | A general motivational quote is again displayed on the screen, this time it is different than the quote displayed after actor action 1     |      |
 
-| Test Pass?: |  Pass / Fail   |
+| Test Pass?: | --------------------------------------------------------- Pass / Fail ---------------------------------------------------------  |
 | ---- | ---- |
 | **Notes and Issues** |     |
 
@@ -64,6 +64,6 @@ Every smartwatch user should wake up with the proper words of encouragement to s
 |      |  2. User presses the button to navigate back to the main screen  | The main screen is displayed, with the 3 different options |      |
 |      |  3. User presses educational quote button | Another education themed quote is displayed on the screen, this one different than the one displayed after Actor Action 1   |      |
 
-| Test Pass?: | Pass / Fail  |
+| Test Pass?: | --------------------------------------------------------- Pass / Fail ---------------------------------------------------------
 | ---- | ---- |
 | **Notes and Issues** |     |
