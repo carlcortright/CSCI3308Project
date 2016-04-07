@@ -8,7 +8,33 @@ Words of Encouragement
 Every smartwatch user should wake up with the proper words of encouragement to start their day off right. Not only should their day start off right, but continual encouragement throughout the day will lead to increased happiness and productivity. Motivation: Our motivation for this project is to develop an app that will be used everyday. We want our users to look forward to our messages and hopefully it’ll be a bright spot in their day.
 
 ## Automated Tests
+Our team built an automated test suite using Espresso. Espresso is a testing platform that allows us to test the interactive functionality of our application. Our test file is located in app/src/androidTest/java/MainActivityTest.java
 
+To run the automated tests, it is as simple as right-clicking on the Java test file and selecting "Run Test". When the test has completed, Android Studio will display which tests, if any have failed. Due to the fact that running our tests requires having Android Studio and a working Android Wear emulator, our team is willing to come in to demo our test code.  
+
+Our team developed seven unit tests to test the functionality of our application.
+##Tests 1-3
+These tests check that the "General", "Educational", and "Sports" buttons display quotes correctly when the button is clicked by testing if the quotes textfield is displayed. 
+
+##Tests 4-6
+These tests check to make sure the "General", "Educational", and "Sports" buttons disappear to make room for the quote to be displayed. These tests also test that the "More Quotes" button appears when the "General", "Educational", and "Sports" buttons are clicked.
+
+##Test 7
+This test checks the functionality of the "More Quotes" button. Having the "General", "Educational", and "Sports" button reappear when the "More Quotes" button is clicked is tested. Having the "More Quotes" button disappear when it is clicked is tested. Finally, we test that the quote that is currently being displayed disappears when the "More Quotes" button is clicked.
+
+Below are screenshots of our testing suite and application.
+
+![](inApp.png)
+
+A screenshot of our application running
+
+Below are three screenshots showing the code for our unit tests
+![](first3Tests.png)
+![](thirdFourthTests.png)
+![](last3Tests.png)
+
+Below is a screenshot of the results Android Studio displays after running the test cases
+![](completedTest.png)
 
 ## User Acceptance Test Plan 1
 | User Case ID | UC-01 |
