@@ -34,6 +34,8 @@ public class MainActivity extends WearableActivity  {
 
     private QuotesTopics quotesTopics = new QuotesTopics();
 
+    private static final long ALARM_DELAY_TIME = 60000*10;
+
     private BoxInsetLayout mContainerView;
     private TextView mTextView;
     private TextView mClockView;
@@ -82,7 +84,7 @@ public class MainActivity extends WearableActivity  {
         }
 
         Intent intent = new Intent(this, AlarmReceiver.class);
-        long triggerTime = nextAlarm.getTriggerTime() + 60000*10;
+        long triggerTime = nextAlarm.getTriggerTime() + ALARM_DELAY_TIME;
         alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP,
                 triggerTime, PendingIntent.getBroadcast(this, 0, intent, 0));
     }
