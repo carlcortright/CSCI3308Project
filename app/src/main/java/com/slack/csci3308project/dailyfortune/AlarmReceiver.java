@@ -6,6 +6,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.widget.Button;
 
+/**
+ * Class for receiving alarms from Android's AlarmManager.
+ * These alarms are set for displaying a quote when the user-set alarm is triggered.
+ */
 public class AlarmReceiver extends BroadcastReceiver {
 
     @Override
