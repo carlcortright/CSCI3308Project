@@ -82,7 +82,7 @@ public class MainActivity extends WearableActivity  {
         }
 
         Intent intent = new Intent(this, AlarmReceiver.class);
-        long triggerTime = System.currentTimeMillis() + 60000*10;
+        long triggerTime = nextAlarm.getTriggerTime() + 60000*10;
         alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP,
                 triggerTime, PendingIntent.getBroadcast(this, 0, intent, 0));
     }
