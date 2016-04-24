@@ -9,7 +9,8 @@ import java.util.Random;
 public class QuotesTopics {
 
     //keywords related to waking up in the morning
-    private static final String[] MORNING_TOPIC_KEYWORDS = {"wake up", "start day"};
+    private static final String[] MORNING_TOPIC_KEYWORDS = {"wake up", "start day", "morning",
+            "sleep", "tired", "energy", "relaxed"};
 
     /**
      * Determine if a quote is a Morning Quote
