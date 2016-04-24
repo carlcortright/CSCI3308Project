@@ -82,7 +82,7 @@ public class MainActivity extends WearableActivity  {
         }
 
         Intent intent = new Intent(this, AlarmReceiver.class);
-        long triggerTime = System.currentTimeMillis() + 60000*10;
+        long triggerTime = nextAlarm.getTriggerTime() + 60000*10;
         alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP,
                 triggerTime, PendingIntent.getBroadcast(this, 0, intent, 0));
     }
@@ -142,13 +142,24 @@ public class MainActivity extends WearableActivity  {
      * @param target the View sent by the View which triggered this event
      */
     public void onClickGeneral(View target){
-        target.hashCode();
-        AlarmManager manager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-        int interval = 8000;
+        generalDatasource = new GeneralQuoteDataSource(this);
+        generalDatasource.open();
+        TextView quoteTextView = (TextView) findViewById(R.id.quote);
+        GeneralQuote randomGQuote = generalDatasource.getRandomGeneralQuote();
 
-        manager.setInexactRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), interval, pendingIntent);
-        Toast.makeText(this, "Alarm Set", Toast.LENGTH_SHORT).show();
+        String genQuote = randomGQuote.getQuote();
+        String genAuthor = randomGQuote.getAuthor();
+        String genQuoteAuthor = genQuote + "\n -" + genAuthor;
+        quoteTextView.setText(genQuoteAuthor);
 
+        View generalButton = findViewById(R.id.button);
+        generalButton.setVisibility(View.GONE);
+        View sportsButton = findViewById(R.id.button3);
+        sportsButton.setVisibility(View.GONE);
+        View educationalButton = findViewById(R.id.button2);
+        educationalButton.setVisibility(View.GONE);
+        View moreQuotesButton = findViewById(R.id.button4);
+        moreQuotesButton.setVisibility(View.VISIBLE);
     }
 
     /**
