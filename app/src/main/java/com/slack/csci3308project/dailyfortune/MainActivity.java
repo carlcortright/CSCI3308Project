@@ -71,6 +71,9 @@ public class MainActivity extends WearableActivity  {
         //this.searchAlarms();
     }
 
+    /**
+     * Searches for alarms, and sets a timer to display a quote at alarm trigger time.
+     */
     public void searchAlarms() {
         AlarmManager alarmManager = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
         AlarmManager.AlarmClockInfo nextAlarm = alarmManager.getNextAlarmClock();
@@ -84,6 +87,10 @@ public class MainActivity extends WearableActivity  {
                 triggerTime, PendingIntent.getBroadcast(this, 0, intent, 0));
     }
 
+    /**
+     * Displays an educational quote when someone clicks the "Educational" button
+     * @param target the View sent by the View which triggered this event
+     */
     public void onClickEducational(View target){
         educationalDatasource = new EducationalQuoteDataSource(this);
         educationalDatasource.open();
@@ -105,6 +112,10 @@ public class MainActivity extends WearableActivity  {
         moreQuotesButton.setVisibility(View.VISIBLE);
     }
 
+    /**
+     * Displays a sports quote when someone clicks the "Educational" button
+     * @param target the View sent by the View which triggered this event
+     */
     public void onClickSports(View target){
         sportsDatasource = new SportsQuoteDataSource(this);
         sportsDatasource.open();
@@ -126,6 +137,10 @@ public class MainActivity extends WearableActivity  {
         moreQuotesButton.setVisibility(View.VISIBLE);
     }
 
+    /**
+     * Displays a general quote when someone clicks the "Educational" button
+     * @param target the View sent by the View which triggered this event
+     */
     public void onClickGeneral(View target){
         target.hashCode();
         AlarmManager manager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
@@ -136,6 +151,10 @@ public class MainActivity extends WearableActivity  {
 
     }
 
+    /**
+     * Allows the user to choose another quote after one is displayed
+     * @param target the View sent by the View which triggered this event
+     */
     public void onClickMore(View target){
         View generalButton = findViewById(R.id.button);
         generalButton.setVisibility(View.VISIBLE);
@@ -180,6 +199,9 @@ public class MainActivity extends WearableActivity  {
         super.onExitAmbient();
     }
 
+    /**
+     * Changes the display based on if ambient has been selected or not.
+     */
     private void updateDisplay() {
         if (isAmbient()) {
             mContainerView.setBackgroundColor(getResources().getColor(android.R.color.black));
