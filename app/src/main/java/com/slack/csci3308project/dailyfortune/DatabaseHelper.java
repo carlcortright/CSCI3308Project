@@ -14,6 +14,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+/**
+ * Class for communication between the app and sqlite database
+ */
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     public static final String TABLE_GENERAL = "general";
@@ -37,11 +40,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private final Context myContext;
 
 
+    /**
+     * Construct this class with the context from the main application.
+     * @param context The context from the main application
+     */
     public DatabaseHelper(Context context){
         super(context, DB_NAME, null, 1);
         this.myContext = context;
     }
 
+    /**
+     * Load the database from a saved location, and copy to dbFile
+     * @param dbFile The target of the copy operation
+     * @throws IOException if there is a problem reading/writing the database files
+     */
     private void copyDatabase(File dbFile) throws IOException{
         InputStream is = myContext.getAssets().open(DB_NAME);
         OutputStream os = new FileOutputStream(dbFile);
@@ -56,6 +68,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         is.close();
     }
 
+    /**
+     * Copy the database only if the database exists
+     */
     public void databaseExist() {
         File dbFile = myContext.getDatabasePath(DB_NAME);
         dbFile.delete();
@@ -67,6 +82,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             }
         }
     }
+    
     @Override
     public synchronized void close(){
         if (myDatabase != null){
