@@ -82,7 +82,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             }
         }
     }
-    
+
     @Override
     public synchronized void close(){
         if (myDatabase != null){
