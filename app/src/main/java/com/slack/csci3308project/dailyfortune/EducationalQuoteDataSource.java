@@ -15,6 +15,7 @@ import android.util.Log;
 /**
  * The source for our Educational Quotes
  */
+
 public class EducationalQuoteDataSource {
     private SQLiteDatabase database;
     private DatabaseHelper dbHelper;
