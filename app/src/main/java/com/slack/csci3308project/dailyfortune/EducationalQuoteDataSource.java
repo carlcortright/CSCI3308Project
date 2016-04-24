@@ -12,6 +12,7 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
+
 public class EducationalQuoteDataSource {
     private SQLiteDatabase database;
     private DatabaseHelper dbHelper;
