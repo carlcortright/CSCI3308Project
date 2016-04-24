@@ -1,16 +1,17 @@
 package com.slack.csci3308project.dailyfortune;
 
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.widget.Toast;
+import android.widget.Button;
 
 public class AlarmReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-
-        // For our recurring task, we'll just display a message
-        Toast.makeText(context, "I'm running", Toast.LENGTH_SHORT).show();
+        Button generalButton = (Button) ((Activity) context).findViewById(R.id.button);
+        generalButton.performClick();
+        ((MainActivity) context).searchAlarms();
     }
 }

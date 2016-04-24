@@ -62,9 +62,9 @@ public class MainActivity extends WearableActivity  {
         sportsDatasource.open();
         List<SportsQuote> sportsValue = sportsDatasource.getAllSportsQuotes();
 
-        //educationalDatasource = new EducationalQuoteDataSource(this);
-        //educationalDatasource.open();
-        //List<EducationalQuote> educationalValues = educationalDatasource.getAllEducationalQuotes();
+        educationalDatasource = new EducationalQuoteDataSource(this);
+        educationalDatasource.open();
+        List<EducationalQuote> educationalValues = educationalDatasource.getAllEducationalQuotes();
 
         Intent alarmIntent = new Intent(MainActivity.this, AlarmReceiver.class);
         pendingIntent = PendingIntent.getBroadcast(MainActivity.this, 0, alarmIntent, 0);
@@ -77,9 +77,7 @@ public class MainActivity extends WearableActivity  {
         if (nextAlarm == null) {
             return;
         }
-        long timeUntilTrigger = nextAlarm.getTriggerTime() - System.currentTimeMillis();
 
-        //new AlarmReceiver().setAlarm(this);
         Intent intent = new Intent(this, AlarmReceiver.class);
         long triggerTime = System.currentTimeMillis() + 60000*10;
         alarmManager.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP,
