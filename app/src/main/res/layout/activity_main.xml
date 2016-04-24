@@ -8,7 +8,7 @@
     android:id="@+id/container"
     tools:context=".MainActivity"
     tools:deviceIds="wear"
-    android:padding="18dp"
+    android:padding="16dp"
     android:background="@drawable/blue_bubbles">
     <!--
     <TextView android:id="@+id/text" app:layout_box="all" android:layout_width="match_parent"
@@ -42,7 +42,7 @@
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
-            android:layout_height="45dp"
+            android:layout_height="48dp"
             android:text="Sports"
             android:layout_gravity="center_horizontal|bottom"
             android:onClick="onClickSports" />
@@ -50,7 +50,7 @@
         <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
-            android:layout_height="45dp"
+            android:layout_height="48dp"
             android:text="More Quotes"
             android:layout_gravity="center_horizontal|bottom"
             android:onClick="onClickMore"
@@ -59,7 +59,7 @@
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
-            android:layout_height="45dp"
+            android:layout_height="48dp"
             android:text="Educational"
             android:layout_gravity="center"
             android:visibility="visible"
