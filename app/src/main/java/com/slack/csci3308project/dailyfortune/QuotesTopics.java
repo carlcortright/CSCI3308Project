@@ -11,6 +11,11 @@ public class QuotesTopics {
     //keywords related to waking up in the morning
     private static final String[] MORNING_TOPIC_KEYWORDS = {"wake up", "start day"};
 
+    /**
+     * Determine if a quote is a Morning Quote
+     * @param quote The quote we are testing
+     * @return true if the quote is related to the morning, false otherwise
+     */
     private boolean isMorningQuote(String quote) {
         for (String morningKeyword : MORNING_TOPIC_KEYWORDS) {
             if (quote.contains(morningKeyword)) {
@@ -20,6 +25,11 @@ public class QuotesTopics {
         return false;
     }
 
+    /**
+     * Pick a morning quote from a GeneralQuoteDatatasource
+     * @param dataSource The datasource to get the morning quote from
+     * @return a GeneralQuote which is a morning quote
+     */
     public GeneralQuote pickMorningQuote(GeneralQuoteDataSource dataSource) {
         List<GeneralQuote> quotes = dataSource.getAllGeneralQuotes();
         Random r = new Random();
