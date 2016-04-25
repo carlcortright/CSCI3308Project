@@ -33,8 +33,8 @@
             android:textColor="@color/black"/>
 
         <Button android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="45dp"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
             android:background="@drawable/buttons"
             android:text="General"
             android:layout_gravity="center_horizontal|top"
@@ -42,16 +42,18 @@
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttons"
             android:text="Sports"
             android:layout_gravity="center_horizontal|bottom"
             android:onClick="onClickSports" />
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttons"
             android:text="More Quotes"
             android:layout_gravity="center_horizontal|bottom"
             android:onClick="onClickMore"
@@ -59,9 +61,10 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
             android:text="Educational"
+            android:background="@drawable/buttons"
             android:layout_gravity="center"
             android:visibility="visible"
             android:onClick="onClickEducational" />
