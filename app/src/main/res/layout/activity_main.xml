@@ -30,20 +30,12 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textSize="10sp"
-            android:textColor="@color/black"/>
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="102dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/buttons"
-            android:text="Sports"
-            android:layout_gravity="center_horizontal|bottom"
-            android:onClick="onClickSports" />
+            android:textColor="@color/black"
+            android:textIsSelectable="false" />
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="110dp"
+            android:layout_width="58dp"
             android:layout_height="45dp"
             android:background="@drawable/buttons"
             android:text="More Quotes"
@@ -53,21 +45,34 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="102dp"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="34dp"
             android:text="Educational"
             android:background="@drawable/buttons"
             android:layout_gravity="center"
             android:visibility="visible"
-            android:onClick="onClickEducational" />
+            android:onClick="onClickEducational"
+            android:textSize="8dp" />
 
         <Button android:id="@+id/button"
-            android:layout_width="102dp"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="34dp"
             android:background="@drawable/buttons"
             android:text="General"
-            android:layout_gravity="center_horizontal|top"
-            android:onClick="onClickGeneral"/>
+            android:layout_gravity="left|center_vertical"
+            android:onClick="onClickGeneral"
+            android:textSize="8dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="60dp"
+            android:layout_height="34dp"
+            android:background="@drawable/buttons"
+            android:text="Sports"
+            android:layout_gravity="right|center_vertical"
+            android:onClick="onClickSports"
+            android:textSize="8dp" />
+
     </FrameLayout>
 
 
