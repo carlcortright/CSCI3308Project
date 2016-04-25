@@ -9,7 +9,7 @@
     tools:context=".MainActivity"
     tools:deviceIds="wear"
     android:padding="16dp"
-    android:background="@drawable/blue_bubbles">
+    android:background="@drawable/mountain">
     <!--
     <TextView android:id="@+id/text" app:layout_box="all" android:layout_width="match_parent"
         android:layout_height="match_parent" android:text="@string/hello_world" android:gravity="center"/>
@@ -32,18 +32,10 @@
             android:textSize="10sp"
             android:textColor="@color/black"/>
 
-        <Button android:id="@+id/button"
-            android:layout_width="110dp"
-            android:layout_height="50dp"
-            android:background="@drawable/buttons"
-            android:text="General"
-            android:layout_gravity="center_horizontal|top"
-            android:onClick="onClickGeneral"/>
-
         <Button
             android:id="@+id/button3"
-            android:layout_width="110dp"
-            android:layout_height="50dp"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/buttons"
             android:text="Sports"
             android:layout_gravity="center_horizontal|bottom"
@@ -52,7 +44,7 @@
         <Button
             android:id="@+id/button4"
             android:layout_width="110dp"
-            android:layout_height="50dp"
+            android:layout_height="45dp"
             android:background="@drawable/buttons"
             android:text="More Quotes"
             android:layout_gravity="center_horizontal|bottom"
@@ -61,13 +53,21 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="110dp"
-            android:layout_height="50dp"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
             android:text="Educational"
             android:background="@drawable/buttons"
             android:layout_gravity="center"
             android:visibility="visible"
             android:onClick="onClickEducational" />
+
+        <Button android:id="@+id/button"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons"
+            android:text="General"
+            android:layout_gravity="center_horizontal|top"
+            android:onClick="onClickGeneral"/>
     </FrameLayout>
 
 
