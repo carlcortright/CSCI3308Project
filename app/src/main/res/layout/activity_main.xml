@@ -35,6 +35,7 @@
         <Button android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
+            android:background="@drawable/buttons"
             android:text="General"
             android:layout_gravity="center_horizontal|top"
             android:onClick="onClickGeneral"/>
