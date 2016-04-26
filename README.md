@@ -57,6 +57,14 @@ Our group plans to follow the agile development methodology. We think that agile
 ##Project Plan:
 http://imgur.com/XNUgpXc
  
+##Repo Organization:
+The app folder contains the source code.  The Documentation folder contains the Javadoc generated documented code.  The database folder contains the database, and the quote text files. 
+
+##How to build the project:
+Load the project in Android Studio, then build and run.
+The below link is more descriptive in how to do this:
+http://developer.android.com/training/wearables/apps/creating.html
+
 
 
 
