@@ -9,7 +9,7 @@
     tools:context=".MainActivity"
     tools:deviceIds="wear"
     android:padding="16dp"
-    android:background="@drawable/mountain">
+    android:background="@drawable/beach">
     <!--
     <TextView android:id="@+id/text" app:layout_box="all" android:layout_width="match_parent"
         android:layout_height="match_parent" android:text="@string/hello_world" android:gravity="center"/>
@@ -18,7 +18,7 @@
         android:layout_width="wrap_content" android:layout_height="wrap_content"
         android:textColor="@android:color/white" android:layout_centerInParent="true" />
     -->
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="5dp"
@@ -32,52 +32,56 @@
             android:textSize="10sp"
             android:textColor="#111111"
             android:textStyle="bold"
-            android:background="#ffffff"
-            android:layout_gravity="center_vertical"
-            android:textIsSelectable="false" />
+            android:textIsSelectable="false"
+            android:layout_gravity="center_horizontal"
+            android:paddingRight="40dp" />
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="58dp"
-            android:layout_height="34dp"
-            android:background="@drawable/buttons"
-            android:text="More Quotes"
-            android:layout_gravity="center_horizontal|bottom"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:onClick="onClickMore"
             android:textSize="8dp"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:background="@drawable/buttons"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="More Quotes"
+            android:layout_marginRight="20dp" />
 
         <Button android:id="@+id/button"
-            android:layout_width="60dp"
+            android:layout_width="40dp"
             android:layout_height="34dp"
             android:background="@drawable/buttons"
-            android:text="General"
+            android:text="Awake"
             android:layout_gravity="center_vertical"
             android:onClick="onClickGeneral"
-            android:textSize="8dp" />
+            android:textSize="8dp"
+            android:layout_marginRight="20dp" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="60dp"
+            android:layout_width="40dp"
             android:layout_height="34dp"
-            android:text="Educational"
+            android:text="Exam"
             android:background="@drawable/buttons"
             android:layout_gravity="center"
             android:visibility="visible"
             android:onClick="onClickEducational"
-            android:textSize="8dp" />
+            android:textSize="8dp"
+            android:layout_marginRight="10dp" />
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="60dp"
+            android:layout_width="40dp"
             android:layout_height="34dp"
             android:background="@drawable/buttons"
-            android:text="Sports"
+            android:text="Game"
             android:layout_gravity="right|center_vertical"
             android:onClick="onClickSports"
-            android:textSize="8dp" />
+            android:textSize="8dp"
+            android:layout_marginRight="20dp" />
 
-    </LinearLayout>
+    </FrameLayout>
 
 
 </android.support.wearable.view.BoxInsetLayout>
